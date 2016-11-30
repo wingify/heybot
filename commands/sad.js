@@ -1,3 +1,3 @@
 module.exports = function (session) {
-	session.send('Ramukaka loves ' + session.message.user.name + ' (hug)');
+	session.send('Heybot loves ' + session.message.user.name + ' (hug)');
 };

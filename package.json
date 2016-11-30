@@ -1,7 +1,7 @@
 {
   "name": "heybot",
   "version": "1.0.0",
-  "description": "A sleek Skype chat bot for your team",
+  "description": "A sleek command based Skype chat bot for your team",
   "main": "app.js",
   "scripts": {
     "start": "./node_modules/.bin/pm2 start app.js",

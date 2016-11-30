@@ -53,7 +53,9 @@ module.exports = function (session, arguments) {
 
 ### Restricting a command to certain users
 
-*Heybot!* gives you a way to restrict commands to certain users only. You can simply add your power users to the file `powerUsers.js`. And then you can simply check the user who ran the command if he is in that list or not.
+*Heybot!* gives you a way to restrict commands to certain users only. You can simply add your power users to the file `powerUsers.js`. And then you can validate the user who ran the command against that list.
+
+**Note**: There is no straight way to get a get a user's ID right now. For that you can temporarily log the message address in your command (`console.log(session.message.address)`), pick the ID from the logged data (Run `./node_modules/.bin/pm2 logs app` to see logs) and add it to `powerUsers.js` list.
 
 [See a sample power user command](/commands/powerusercommand.js)
 
