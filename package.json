@@ -1,0 +1,19 @@
+{
+  "name": "heybot",
+  "version": "1.0.0",
+  "description": "A sleek command based Skype chat bot for your team",
+  "main": "app.js",
+  "scripts": {
+    "start": "./node_modules/.bin/pm2 start app.js",
+    "stop": "./node_modules/.bin/pm2 stop app.js"
+  },
+  "author": "Wingify",
+  "license": "MIT",
+  "dependencies": {
+    "botbuilder": "^3.2.3",
+    "pm2": "^1.1.3",
+    "q": "^1.4.1",
+    "request": "^2.74.0",
+    "restify": "^4.1.1"
+  }
+}
